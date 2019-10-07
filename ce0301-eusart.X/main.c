@@ -21,14 +21,31 @@
 //***************** Bibliotecas
 #include <xc.h>
 #include "config.h"
+#include "lcd4bitBus.h"
+#include "keyboard.h"
+#include "eusart.h"
 
 
 //***************** Programa Principal
 void main(void)
 {
+    unsigned char vetor[2] = " ";
+    initLCD();
+    initKeyboard();
+    initEUSART();
+    
+    lcd(0,0, "Curta Eletronica");
+    
     while( 1 )                      // Laço de repetição infinita.
     {
- 
+        keyboardScan();
+        
+        if( currentKey() && !previousKey() )
+        {
+            vetor[0] = currentKey();
+            lcd(0,1, vetor );
+        }
+
     }
     return;
 }

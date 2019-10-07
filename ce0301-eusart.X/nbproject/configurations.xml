@@ -6,6 +6,8 @@
                    projectFiles="true">
       <itemPath>config.h</itemPath>
       <itemPath>eusart.h</itemPath>
+      <itemPath>keyboard.h</itemPath>
+      <itemPath>lcd4bitBus.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -16,6 +18,8 @@
                    projectFiles="true">
       <itemPath>main.c</itemPath>
       <itemPath>eusart.c</itemPath>
+      <itemPath>keyboard.c</itemPath>
+      <itemPath>lcd4bitBus.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

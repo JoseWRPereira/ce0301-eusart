@@ -10,11 +10,11 @@
 
 unsigned char rxEUSART( void )
 {
-
+    return( 0 );
 }
 unsigned char rxStatusEUSART( void )
 {
-
+    return( 0 );
 }
 
 void txEUSART( unsigned char d )
@@ -24,7 +24,7 @@ void txEUSART( unsigned char d )
 
 unsigned char txStatusEUSART( void )
 {
-
+    return( 0 );
 }
 
 
